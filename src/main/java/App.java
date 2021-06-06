@@ -24,28 +24,23 @@ public class App {
                 double dunnTax = amount * .005;
                 double dunnTotalTax = dunnTax + wiscTax;
                 double dunnTotal = amount + wiscTax +dunnTotalTax;
-                System.out.println("The tax is "+dunnTotalTax);
-                System.out.println("The total is "+ dunnTotal);
+                System.out.println("The tax is "+dunnTotalTax+"\n"+"The total is "+ dunnTotal);
             }
             else if(county.equals("eau claire")){
                 double eauTax = amount * .004;
                 double eauTotalTax = eauTax + wiscTax;
                 double eauTotal = amount + wiscTax +eauTotalTax;
-                System.out.println("The tax is "+eauTotalTax);
-                System.out.println("The total is "+ eauTotal);
+                System.out.println("The tax is "+eauTotalTax+"\n"+"The total is "+ eauTotal);
             }
             else {
                 double wiscTotal = amount + wiscTax;
-                System.out.println("The tax is "+wiscTax);
-                System.out.println("The total is "+ wiscTotal);
-
+                System.out.println("The tax is "+wiscTax+"\n"+"The total is "+ wiscTotal);
             }
         }
         else if (state.equals("illinois")){
             double illTax = amount * .08;
             double illTotal = amount + illTax;
-            System.out.println("The tax is "+illTax);
-            System.out.println("The total is "+ illTotal);
+            System.out.println("The tax is "+illTax+"\n"+"The total is "+ illTotal);
         }
         else{
             System.out.println("The total is "+ amount);
